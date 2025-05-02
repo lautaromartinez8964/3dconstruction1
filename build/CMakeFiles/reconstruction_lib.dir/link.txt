@@ -1,0 +1,2 @@
+/usr/bin/ar qc libreconstruction_lib.a CMakeFiles/reconstruction_lib.dir/src/reconstruction.o
+/usr/bin/ranlib libreconstruction_lib.a

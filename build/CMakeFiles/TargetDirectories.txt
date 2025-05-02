@@ -1,0 +1,4 @@
+/root/3dc_bili_2/build/CMakeFiles/reconstruction_lib.dir
+/root/3dc_bili_2/build/CMakeFiles/reconstructor.dir
+/root/3dc_bili_2/build/CMakeFiles/edit_cache.dir
+/root/3dc_bili_2/build/CMakeFiles/rebuild_cache.dir

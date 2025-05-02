@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/root/3dc_bili_2/build",
+  "command": "/usr/bin/g++  -I/root/3dc_bili_2/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv4 -g -o CMakeFiles/reconstruction_lib.dir/src/reconstruction.o -c /root/3dc_bili_2/src/reconstruction.cpp",
+  "file": "/root/3dc_bili_2/src/reconstruction.cpp"
+},
+{
+  "directory": "/root/3dc_bili_2/build",
+  "command": "/usr/bin/g++  -I/root/3dc_bili_2/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv4 -g -o CMakeFiles/reconstructor.dir/src/main.o -c /root/3dc_bili_2/src/main.cpp",
+  "file": "/root/3dc_bili_2/src/main.cpp"
+}
+]
