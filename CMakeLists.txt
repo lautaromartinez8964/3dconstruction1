@@ -1,4 +1,14 @@
 # ... (cmake_minimum_required, project) ...
+# 指定 CMake 最低版本要求
+cmake_minimum_required(VERSION 3.13) # OpenCV 4 和 filesystem 可能需要更高版本
+
+# 定义项目名称和语言
+project(SingleViewReconstruction LANGUAGES CXX)
+
+# 设置 C++ 标准 (需要 C++17 或更高版本以支持 filesystem)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_EXTENSIONS OFF) # 推荐关闭编译器特定的扩展
 
 # --- 查找依赖库 ---
 find_package(Eigen3 REQUIRED)

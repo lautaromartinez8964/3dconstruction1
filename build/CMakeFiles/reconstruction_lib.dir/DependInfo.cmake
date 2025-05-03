@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/3dc_bili_2/src/reconstruction.cpp" "CMakeFiles/reconstruction_lib.dir/src/reconstruction.o" "gcc" "CMakeFiles/reconstruction_lib.dir/src/reconstruction.o.d"
+  "/root/3dc_bili_2/src/reconstruction.cpp" "CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o" "gcc" "CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o.d"
   )
 
 # Targets to which this target links.

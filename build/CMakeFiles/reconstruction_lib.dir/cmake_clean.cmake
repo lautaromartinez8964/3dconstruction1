@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/reconstruction_lib.dir/src/reconstruction.o"
-  "CMakeFiles/reconstruction_lib.dir/src/reconstruction.o.d"
+  "CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o"
+  "CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o.d"
   "libreconstruction_lib.a"
   "libreconstruction_lib.pdb"
 )

@@ -69,28 +69,28 @@ include CMakeFiles/reconstructor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/reconstructor.dir/flags.make
 
-CMakeFiles/reconstructor.dir/src/main.o: CMakeFiles/reconstructor.dir/flags.make
-CMakeFiles/reconstructor.dir/src/main.o: ../src/main.cpp
-CMakeFiles/reconstructor.dir/src/main.o: CMakeFiles/reconstructor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/3dc_bili_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reconstructor.dir/src/main.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/reconstructor.dir/src/main.o -MF CMakeFiles/reconstructor.dir/src/main.o.d -o CMakeFiles/reconstructor.dir/src/main.o -c /root/3dc_bili_2/src/main.cpp
+CMakeFiles/reconstructor.dir/src/main.cpp.o: CMakeFiles/reconstructor.dir/flags.make
+CMakeFiles/reconstructor.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/reconstructor.dir/src/main.cpp.o: CMakeFiles/reconstructor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/3dc_bili_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reconstructor.dir/src/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/reconstructor.dir/src/main.cpp.o -MF CMakeFiles/reconstructor.dir/src/main.cpp.o.d -o CMakeFiles/reconstructor.dir/src/main.cpp.o -c /root/3dc_bili_2/src/main.cpp
 
-CMakeFiles/reconstructor.dir/src/main.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/reconstructor.dir/src/main.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/3dc_bili_2/src/main.cpp > CMakeFiles/reconstructor.dir/src/main.i
+CMakeFiles/reconstructor.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/reconstructor.dir/src/main.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/3dc_bili_2/src/main.cpp > CMakeFiles/reconstructor.dir/src/main.cpp.i
 
-CMakeFiles/reconstructor.dir/src/main.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/reconstructor.dir/src/main.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/3dc_bili_2/src/main.cpp -o CMakeFiles/reconstructor.dir/src/main.s
+CMakeFiles/reconstructor.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/reconstructor.dir/src/main.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/3dc_bili_2/src/main.cpp -o CMakeFiles/reconstructor.dir/src/main.cpp.s
 
 # Object files for target reconstructor
 reconstructor_OBJECTS = \
-"CMakeFiles/reconstructor.dir/src/main.o"
+"CMakeFiles/reconstructor.dir/src/main.cpp.o"
 
 # External object files for target reconstructor
 reconstructor_EXTERNAL_OBJECTS =
 
-reconstructor: CMakeFiles/reconstructor.dir/src/main.o
+reconstructor: CMakeFiles/reconstructor.dir/src/main.cpp.o
 reconstructor: CMakeFiles/reconstructor.dir/build.make
 reconstructor: libreconstruction_lib.a
 reconstructor: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d

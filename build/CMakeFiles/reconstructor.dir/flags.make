@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/root/3dc_bili_2/include -isystem /usr/include/eigen3 -isystem /usr/include/opencv4
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=c++17
 

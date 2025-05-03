@@ -148,7 +148,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=SingleViewReconstruction
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -233,8 +233,14 @@ Project_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/root/3dc_bili_2
 
-//Dependencies for the target
-reconstruction_lib_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;
+//Value Computed by CMake
+SingleViewReconstruction_BINARY_DIR:STATIC=/root/3dc_bili_2/build
+
+//Value Computed by CMake
+SingleViewReconstruction_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SingleViewReconstruction_SOURCE_DIR:STATIC=/root/3dc_bili_2
 
 
 ########################

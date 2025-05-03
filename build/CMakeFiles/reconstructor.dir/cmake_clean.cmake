@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/reconstructor.dir/src/main.o"
-  "CMakeFiles/reconstructor.dir/src/main.o.d"
+  "CMakeFiles/reconstructor.dir/src/main.cpp.o"
+  "CMakeFiles/reconstructor.dir/src/main.cpp.o.d"
   "reconstructor"
   "reconstructor.pdb"
 )

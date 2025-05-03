@@ -1,0 +1,56 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // 配置 1: 用于调试 (按 F5)
+            "name": "(gdb) 启动 Reconstructor", // 在调试下拉菜单中显示的名称
+            "type": "cppdbg",                  // 调试器类型 (C/C++ extension)
+            "request": "launch",               // 请求类型：启动新进程
+            "program": "${workspaceFolder}/build/reconstructor", // !! 要调试/运行的程序路径 !!
+                                                // ${workspaceFolder} 指向项目根目录
+                                                // /build/ 是 CMake 的构建目录
+                                                // reconstructor 是 CMakeLists.txt 中定义的可执行文件名
+            "args": [],                        // 传递给程序的命令行参数 (这里为空)
+            "stopAtEntry": false,              // 是否在程序入口点 main() 处暂停 (调试时可设为 true)
+            "cwd": "${workspaceFolder}/build", // !! 程序运行时的工作目录 !!
+                                                // 必须是 build 目录，因为 main.cpp 中的 "../data" 相对路径需要从此出发
+            "environment": [],                 // 环境变量 (通常为空)
+            "externalConsole": false,          // 是否使用外部终端窗口 (false 使用 VSCode 集成终端)
+            "MIMode": "gdb",                   // 使用 GDB 调试器接口
+            "miDebuggerPath": "/usr/bin/gdb",  // !! GDB 调试器本身的路径 !! (请用 `which gdb` 确认)
+                                                // 如果找不到 GDB，必须指定此项
+            "setupCommands": [                 // 启动 GDB 时执行的命令
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true     // 忽略此命令的失败 (某些旧 GDB 可能不支持)
+                }
+            ]
+            // "preLaunchTask": "CMake Build" // <-- 重要：暂时注释掉或删除 preLaunchTask
+                                            // 避免因编译任务失败导致无法启动
+                                            // 请在运行/调试前确保已手动成功编译项目
+        },
+        {
+            // 配置 2: 用于直接运行 (无调试)
+            "name": "运行 Reconstructor (无调试)", // 在运行下拉菜单中显示的名称
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/reconstructor", // 同上
+            "args": [],
+            "stopAtEntry": false,              // 运行时不暂停
+            "cwd": "${workspaceFolder}/build", // 同上
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb", // 同上
+            // --- 同样，确保没有 preLaunchTask ---
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

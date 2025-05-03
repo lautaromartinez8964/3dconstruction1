@@ -142,35 +142,53 @@ reconstructor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstructor.dir/build.make CMakeFiles/reconstructor.dir/build
 .PHONY : reconstructor/fast
 
-# target to build an object file
-src/main.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstructor.dir/build.make CMakeFiles/reconstructor.dir/src/main.o
+src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
-# target to preprocess a source file
-src/main.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstructor.dir/build.make CMakeFiles/reconstructor.dir/src/main.i
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstructor.dir/build.make CMakeFiles/reconstructor.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
 .PHONY : src/main.i
 
-# target to generate assembly for a file
-src/main.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstructor.dir/build.make CMakeFiles/reconstructor.dir/src/main.s
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstructor.dir/build.make CMakeFiles/reconstructor.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
 .PHONY : src/main.s
 
-# target to build an object file
-src/reconstruction.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstruction_lib.dir/build.make CMakeFiles/reconstruction_lib.dir/src/reconstruction.o
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstructor.dir/build.make CMakeFiles/reconstructor.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/reconstruction.o: src/reconstruction.cpp.o
 .PHONY : src/reconstruction.o
 
-# target to preprocess a source file
-src/reconstruction.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstruction_lib.dir/build.make CMakeFiles/reconstruction_lib.dir/src/reconstruction.i
+# target to build an object file
+src/reconstruction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstruction_lib.dir/build.make CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o
+.PHONY : src/reconstruction.cpp.o
+
+src/reconstruction.i: src/reconstruction.cpp.i
 .PHONY : src/reconstruction.i
 
-# target to generate assembly for a file
-src/reconstruction.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstruction_lib.dir/build.make CMakeFiles/reconstruction_lib.dir/src/reconstruction.s
+# target to preprocess a source file
+src/reconstruction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstruction_lib.dir/build.make CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.i
+.PHONY : src/reconstruction.cpp.i
+
+src/reconstruction.s: src/reconstruction.cpp.s
 .PHONY : src/reconstruction.s
+
+# target to generate assembly for a file
+src/reconstruction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reconstruction_lib.dir/build.make CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.s
+.PHONY : src/reconstruction.cpp.s
 
 # Help Target
 help:

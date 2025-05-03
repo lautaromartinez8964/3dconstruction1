@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/reconstructor.dir/src/main.o -o reconstructor  libreconstruction_lib.a /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d 
+/usr/bin/g++ -g CMakeFiles/reconstructor.dir/src/main.cpp.o -o reconstructor  libreconstruction_lib.a /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d 

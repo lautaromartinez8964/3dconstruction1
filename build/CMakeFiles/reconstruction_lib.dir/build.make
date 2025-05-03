@@ -69,28 +69,28 @@ include CMakeFiles/reconstruction_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/reconstruction_lib.dir/flags.make
 
-CMakeFiles/reconstruction_lib.dir/src/reconstruction.o: CMakeFiles/reconstruction_lib.dir/flags.make
-CMakeFiles/reconstruction_lib.dir/src/reconstruction.o: ../src/reconstruction.cpp
-CMakeFiles/reconstruction_lib.dir/src/reconstruction.o: CMakeFiles/reconstruction_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/3dc_bili_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reconstruction_lib.dir/src/reconstruction.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/reconstruction_lib.dir/src/reconstruction.o -MF CMakeFiles/reconstruction_lib.dir/src/reconstruction.o.d -o CMakeFiles/reconstruction_lib.dir/src/reconstruction.o -c /root/3dc_bili_2/src/reconstruction.cpp
+CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o: CMakeFiles/reconstruction_lib.dir/flags.make
+CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o: ../src/reconstruction.cpp
+CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o: CMakeFiles/reconstruction_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/3dc_bili_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o -MF CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o.d -o CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o -c /root/3dc_bili_2/src/reconstruction.cpp
 
-CMakeFiles/reconstruction_lib.dir/src/reconstruction.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/reconstruction_lib.dir/src/reconstruction.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/3dc_bili_2/src/reconstruction.cpp > CMakeFiles/reconstruction_lib.dir/src/reconstruction.i
+CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/3dc_bili_2/src/reconstruction.cpp > CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.i
 
-CMakeFiles/reconstruction_lib.dir/src/reconstruction.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/reconstruction_lib.dir/src/reconstruction.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/3dc_bili_2/src/reconstruction.cpp -o CMakeFiles/reconstruction_lib.dir/src/reconstruction.s
+CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/3dc_bili_2/src/reconstruction.cpp -o CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.s
 
 # Object files for target reconstruction_lib
 reconstruction_lib_OBJECTS = \
-"CMakeFiles/reconstruction_lib.dir/src/reconstruction.o"
+"CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o"
 
 # External object files for target reconstruction_lib
 reconstruction_lib_EXTERNAL_OBJECTS =
 
-libreconstruction_lib.a: CMakeFiles/reconstruction_lib.dir/src/reconstruction.o
+libreconstruction_lib.a: CMakeFiles/reconstruction_lib.dir/src/reconstruction.cpp.o
 libreconstruction_lib.a: CMakeFiles/reconstruction_lib.dir/build.make
 libreconstruction_lib.a: CMakeFiles/reconstruction_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/3dc_bili_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libreconstruction_lib.a"
